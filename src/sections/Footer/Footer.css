@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    margin: auto;
+    max-width: var(--content-width);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__text-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__text {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    color: var(--color-text-secondary);
+    margin-right: var(--space-4);
+}
+
+.footer__text-name {
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+}
+
+.footer__text-thirdary {
+    color: var(--color-text-thirdary);
+}
