@@ -1,0 +1,22 @@
+.text__subtitle {
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 0;
+}
+
+.hero__profile-image {
+    width: 40%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+}
+
+.text__description {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-5);
+    max-width: var(--content-width);
+}

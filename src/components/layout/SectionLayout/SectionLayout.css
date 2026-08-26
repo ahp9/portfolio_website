@@ -1,0 +1,21 @@
+
+.section__layout {
+    display: flex;
+    margin: auto;
+    max-width: var(--content-width);
+    flex-direction: column;
+}
+
+.section__layout-row {
+    display: grid;
+    grid-template-columns: minmax(180px, 1fr) 2.5fr;
+}
+
+.section__layout-content {
+    display: flex;
+    justify-content: center;
+}
+
+.section__layout-below {
+    margin-top: calc(-1* var(--space-6));
+}

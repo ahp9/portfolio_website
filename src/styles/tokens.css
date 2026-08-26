@@ -24,6 +24,13 @@
   --color-border: rgba(41, 43, 49, 0.12);
   --color-border-strong: rgba(41, 43, 49, 0.2);
 
+  /* Tags */
+  --color-tag-green: #22C55E;
+  --color-tag-blue: #bdd4f8;
+  --color-tag-purple: #d9c8ff;
+  --color-tag-orange: #f8d08d;
+  --color-tag-pink: #ee94c1;
+
 
   /* ----------------------------------
      TYPOGRAPHY
@@ -73,7 +80,7 @@
   ---------------------------------- */
 
   --page-width: 1200px;
-  --content-width: 760px;
+  --content-width: 900px;
 
   --page-padding: clamp(1.25rem, 4vw, 4rem);
 

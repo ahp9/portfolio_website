@@ -1,0 +1,55 @@
+.education__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.education__entry:not(:last-child) {
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.education__entry {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-4);
+}
+
+.education__entry-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-4);
+}
+
+.education__degree {
+    font-size: var(--text-lg);
+    font-family: var(--font-display);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-medium);
+}
+
+.education__period {
+    font-size: var(--text-xs);
+    color: var(--color-text-thirdary);
+    white-space: nowrap;
+}
+
+.education__institution-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-1);
+}
+
+.education__institution {
+    font-size: var(--text-sm);
+    color: var(--color-accent-text);
+    margin-top: var(--space-1);
+}
+
+.education__description {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-body);
+    margin-top: var(--space-2);
+}
