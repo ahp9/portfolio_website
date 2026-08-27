@@ -4,15 +4,43 @@
     gap: var(--space-6);
 }
 
-.education__entry:not(:last-child) {
-    padding-bottom: var(--space-6);
-    border-bottom: 1px solid var(--color-border);
+.education__entry {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    column-gap: var(--space-4);
+    align-items: stretch;
 }
 
-.education__entry {
-    display: flex;
-    flex-direction: row;
-    gap: var(--space-4);
+.education__entry-period-container {
+    position: relative;
+    padding-right: var(--space-4);
+    text-align: right;
+}
+
+.education__entry-period-container::before {
+    content: "";
+    position: absolute;
+    top: var(--space-2);
+    left: var(--space-6);
+    width: var(--space-3);
+    height: var(--space-3);
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    z-index: 1;
+}
+
+.education__entry-period-container::after {
+    content: "";
+    position: absolute;
+    top: var(--space-5);
+    bottom: calc(-1 * var(--space-6));
+    left: 2.3rem;
+    width: 2px;
+    background-color: var(--color-lavender);
+}
+
+.education__entry:last-child .education__entry-period-container::after {
+    display: none;
 }
 
 .education__entry-header {
@@ -27,6 +55,7 @@
     font-family: var(--font-display);
     color: var(--color-text-primary);
     font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-1);
 }
 
 .education__period {
@@ -42,13 +71,19 @@
 }
 
 .education__institution {
-    font-size: var(--text-sm);
+    font-size: var(--text-xs);
     color: var(--color-accent-text);
     margin-top: var(--space-1);
 }
 
+.education__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+}
+
 .education__description {
-    font-size: var(--text-base);
+    font-size: var(--text-sm);
     color: var(--color-text-secondary);
     line-height: var(--leading-body);
     margin-top: var(--space-2);

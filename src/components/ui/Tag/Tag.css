@@ -1,35 +1,38 @@
-
-
 .tag {
     display: inline-block;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.25rem;
-    font-size: var(--text-sm);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-md);
+    font-size: var(--text-xs);
     font-family: var(--font-body);
     color: var(--color-text-primary);
 }
 
 .tag--green {
-    background-color: var(--color-tag-green);
-    color:  var(--color-primary);
+    color: var(--color-tag-green-text);
+    background-color: color-mix(in srgb, var(--color-tag-green) 50%, transparent);
+    border: var(--color-tag-green) 1px solid;
 }
 
 .tag--blue {
-    background-color: var(--color-tag-blue);
-    color:  var(--color-primary);
+    color: var(--color-tag-blue-text);
+    background-color: color-mix(in srgb, var(--color-tag-blue) 50%, transparent);
+    border: var(--color-tag-blue) 1px solid;
 }
 
 .tag--purple {
-    background-color: var(--color-tag-purple);
-    color:  var(--color-primary);
+    color: var(--color-tag-purple-text);
+    background-color: color-mix(in srgb, var(--color-tag-purple) 50%, transparent);
+    border: var(--color-tag-purple) 1px solid;
 }
 
 .tag--orange {
-    background-color: var(--color-tag-orange);
-    color:  var(--color-primary);
+    color: var(--color-tag-orange-text);
+    background-color: color-mix(in srgb, var(--color-tag-orange) 50%, transparent);
+    border: var(--color-tag-orange) 1px solid;
 }
 
 .tag--pink {
-    background-color: var(--color-tag-pink);
-    color:  var(--color-primary);
+    color: var(--color-tag-pink-text);
+    background-color: color-mix(in srgb, var(--color-tag-pink) 50%, transparent);
+    border: var(--color-tag-pink) 1px solid;
 }

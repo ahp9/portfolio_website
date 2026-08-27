@@ -19,7 +19,7 @@ function Education() {
               <div className="education__institution-container">
                 <p className="education__institution">{entry.institution}</p>
                 {entry.specialization && (
-                  <p className="education__institution">{entry.specialization}</p>
+                  <p className="education__institution">| Specialization: {entry.specialization}</p>
                 )}
               </div>
               {entry.tags && (
