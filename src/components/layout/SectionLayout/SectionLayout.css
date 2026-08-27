@@ -15,7 +15,3 @@
     display: flex;
     justify-content: center;
 }
-
-.section__layout-below {
-    margin-top: calc(-1* var(--space-6));
-}

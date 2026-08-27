@@ -14,8 +14,8 @@ function Hero() {
                 Þar leitaðist eftir að auka þekkingu og skilning á notendaupplifun og jók mína getu í data visulaization og þróun hugbúnaðar.
                 Fyrir það kláraði ég BSc í Hugbúnaðarverkfræði við Háskóla Íslands, með áherslu á forritun og hugbúnaðarverkfræði.
             </p>
-            <Button scrollTo="education" variant="primary">
-                Sjá meira um námið mitt
+            <Button scrollTo="projects" variant="primary">
+                See my projects
             </Button>
         </div>
         <img className="hero__profile-image" src="/profile_photo.jpeg" alt="Ástríður Haraldsdóttir Passauer" />

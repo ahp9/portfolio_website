@@ -1,0 +1,183 @@
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface);
+    overflow: hidden;
+}
+
+.project-card__top {
+    display: flex;
+    gap: var(--space-5);
+    align-items: flex-start;
+}
+
+.project-card__info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.project-card__preview {
+    flex: 1;
+    min-width: 0;
+    aspect-ratio: 16 / 10;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background-color: var(--color-border);
+    position: relative;
+}
+
+.project-card__preview iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+    border: none;
+    display: block;
+}
+
+.project-card__preview-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+}
+
+.project-card:not(.project-card--expanded):hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.project-card--expanded {
+    grid-column: 1 / -1;
+    z-index: 1;
+    box-shadow: var(--shadow-card);
+}
+
+.project-card__close {
+    position: absolute;
+    top: var(--space-4);
+    right: var(--space-4);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    background-color: var(--color-surface);
+    color: var(--color-text-secondary);
+    font-size: var(--text-lg);
+    line-height: 1;
+    cursor: pointer;
+    z-index: inherit;
+}
+
+.project-card__close:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent-text);
+}
+
+.project-card__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.project-card--expanded .project-card__header {
+    padding-right: var(--space-8);
+}
+
+.project-card__number {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--color-accent-text);
+}
+
+.project-card__period {
+    font-size: var(--text-xs);
+    color: var(--color-text-thirdary);
+}
+
+.project-card__title {
+    font-size: var(--text-lg);
+    font-family: var(--font-display);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-medium);
+}
+
+.project-card--expanded .project-card__title {
+    font-size: var(--text-h3);
+}
+
+.project-card__description {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-body);
+}
+
+.project-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+}
+
+.project-card__details {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition:
+        grid-template-rows var(--duration-slow) var(--ease-standard),
+        opacity var(--duration-normal) var(--ease-standard);
+}
+
+.project-card--expanded .project-card__details {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    transition:
+        grid-template-rows var(--duration-slow) var(--ease-standard),
+        opacity var(--duration-slow) var(--ease-standard);
+}
+
+.project-card__details-inner {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+}
+
+.project-card__details-inner p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+}
+
+.project-card__details-inner strong {
+    display: block;
+    font-size: var(--text-base);
+    margin-bottom: var(--space-1);
+    color: var(--color-text-primary);
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-medium);
+}
+
+.project-card__links {
+    display: flex;
+    gap: var(--space-4);
+    margin-top: var(--space-2);
+}
+
+.project-card__link {
+    font-size: var(--text-xs);
+    color: var(--color-accent-text);
+}
