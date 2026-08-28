@@ -7,7 +7,7 @@ function Header() {
     return (
         <header className="header" aria-label="Main Navigation">
             <ul className="header__list">
-                <a href="/" className="header__link header__logo">
+                <a href="#hero" className="header__link header__logo">
                     ÁHP
                 </a>
                 {navigation.map((item) => (

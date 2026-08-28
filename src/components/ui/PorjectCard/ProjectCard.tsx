@@ -74,18 +74,28 @@ function ProjectCard({ project, expanded, onOpen, onClose, cardRef }: ProjectCar
         {expanded && (
           <div className="project-card__preview" ref={previewRef}>
             {project.links.demo ? (
-              <iframe
-                src={project.links.demo}
-                title={`${project.title} preview`}
-                loading="lazy"
-                style={{
-                  width: `${PREVIEW_NATIVE_WIDTH}px`,
-                  height: `${PREVIEW_NATIVE_HEIGHT}px`,
-                  transform: `scale(${scale})`,
-                }}
-              />
+              <>
+                <div className="project-card__preview-media">
+                  <iframe
+                    src={project.links.demo}
+                    title={`${project.title} preview`}
+                    loading="lazy"
+                    style={{
+                      width: `${PREVIEW_NATIVE_WIDTH}px`,
+                      height: `${PREVIEW_NATIVE_HEIGHT}px`,
+                      transform: `scale(${scale})`,
+                    }}
+                  />
+                </div>
+                <p className="project-card__preview-caption">Live demo of the project</p>
+              </>
             ) : (
-              <div className="project-card__preview-placeholder">No demo available</div>
+              <>
+                <div className="project-card__preview-media">
+                  <img className="project-card__image" src={project.image} alt="" />
+                </div>
+                <p className="project-card__preview-caption">Static image of the project</p>
+              </>
             )}
           </div>
         )}
@@ -102,11 +112,6 @@ function ProjectCard({ project, expanded, onOpen, onClose, cardRef }: ProjectCar
       </div>
 
       <div className="project-card__links">
-        {project.links.caseStudy && (
-          <a className="project-card__link" href={project.links.caseStudy} onClick={(e) => e.stopPropagation()}>
-            Case study
-          </a>
-        )}
         {project.links.github && (
           <a className="project-card__link" href={project.links.github} onClick={(e) => e.stopPropagation()}>
             GitHub

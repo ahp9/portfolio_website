@@ -65,7 +65,7 @@ export const projects: Project[] = [
             demo: null,
         },
 
-        image: "/images/projects/master-thesis.png",
+        image: "public/master_thesis.png",
         featured: true,
         grade: "12 / 12",
     },

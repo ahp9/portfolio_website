@@ -4,6 +4,7 @@
     margin: auto;
     max-width: var(--content-width);
     flex-direction: column;
+    scroll-margin-top: var(--space-9);
 }
 
 .section__layout-row {
