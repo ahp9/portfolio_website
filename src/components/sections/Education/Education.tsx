@@ -7,7 +7,7 @@ import Tag from "../../ui/Tag/Tag";
 
 function Education() {
   return (
-    <SectionLayout id="education" title="Menntun" number="02" size="sm">
+    <SectionLayout id="education" title="Education" number="02" size="sm">
       <div className="education__list">
         {education.map((entry) => (
           <div className="education__entry" key={entry.degree}>

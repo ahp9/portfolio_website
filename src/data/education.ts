@@ -17,11 +17,11 @@ export const education: EducationEntry[] = [
     specialization: "Human-Computer Interaction",
     period: "2024 – 2026",
     tags: [
-      { text: "HCI", color: "purple" },
-      { text: "UX Design", color: "purple" },
-      { text: "Data Visualization", color: "orange" },
+      { text: "HCI", color: "pink" },
+      { text: "UX Design", color: "pink" },
+      { text: "Data Visualization", color: "pink" },
       { text: "Human-Centered AI", color: "pink" },
-      { text: "Python", color: "pink" },
+      { text: "Python", color: "blue" },
     ],
     description:
       "Áhersla á Human-Computer Interaction, þar sem ég jók þekkingu og skilning á notendaupplifun og efldi getu mína í data visualization og þróun hugbúnaðar.",
@@ -31,11 +31,11 @@ export const education: EducationEntry[] = [
     institution: "Háskóli Íslands",
     period: "2021 – 2024",
     tags: [
-      { text: "Software Engineering", color: "green" },
-      { text: "Full-Stack", color: "green" },
-      { text: "Frontend", color: "blue" },
-      { text: "Web Development", color: "blue" },
-      { text: "OOP", color: "green" },
+      { text: "Software Engineering", color: "orange" },
+      { text: "Full-Stack", color: "purple" },
+      { text: "Frontend", color: "purple" },
+      { text: "Web Development", color: "purple" },
+      { text: "OOP", color: "blue" },
     ],
     description:
       "Áhersla á forritun og hugbúnaðarverkfræði.",

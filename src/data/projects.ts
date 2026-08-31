@@ -53,10 +53,10 @@ export const projects: Project[] = [
             "Research, system architecture, LLM engineering, usability testing and experimental evaluation.",
 
         tags: [
-            { text: "Python", color: "purple" },
-            { text: "LLMs", color: "purple" },
-            { text: "HCI", color: "orange" },
-            { text: "SRL", color: "green" },
+            { text: "Python", color: "blue" },
+            { text: "LLMs", color: "blue" },
+            { text: "HCI", color: "pink" },
+            { text: "SRL", color: "orange" },
         ],
 
         links: {
@@ -96,8 +96,8 @@ export const projects: Project[] = [
         tags: [
             { text: "D3.js", color: "purple" },
             { text: "JavaScript", color: "purple" },
-            { text: "Data visualization", color: "orange" },
-            { text: "HCI", color: "green" },
+            { text: "Data visualization", color: "pink" },
+            { text: "HCI", color: "pink" },
         ],
 
         links: {
@@ -135,9 +135,9 @@ export const projects: Project[] = [
 
         tags: [
             { text: "React", color: "purple" },
-            { text: "Express", color: "purple" },
-            { text: "PostgreSQL", color: "orange" },
-            { text: "OpenF1 API", color: "green" },
+            { text: "Express", color: "blue" },
+            { text: "PostgreSQL", color: "blue" },
+            { text: "OpenF1 API", color: "blue" },
         ],
 
         links: {
@@ -176,9 +176,9 @@ export const projects: Project[] = [
         tags: [
             { text: "Next.js", color: "purple" },
             { text: "TypeScript", color: "purple" },
-            { text: "D3.js", color: "orange" },
-            { text: "Supabase", color: "green" },
-            { text: "HCI", color: "orange" },
+            { text: "D3.js", color: "purple" },
+            { text: "Supabase", color: "blue" },
+            { text: "HCI", color: "pink" },
         ],
 
         links: {
@@ -217,10 +217,10 @@ export const projects: Project[] = [
             "Data collection, NLP pipeline development, network construction, community analysis, visualization and interpretation.",
 
         tags: [
-            { text: "Python", color: "purple" },
-            { text: "NetworkX", color: "purple" },
-            { text: "NLP", color: "orange" },
-            { text: "TF-IDF", color: "green" },
+            { text: "Python", color: "blue" },
+            { text: "NetworkX", color: "blue" },
+            { text: "NLP", color: "blue" },
+            { text: "TF-IDF", color: "blue" },
             { text: "Network Science", color: "orange" },
         ],
 

@@ -1,0 +1,17 @@
+.about-me__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.about-me__sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  width: 100%;
+}
+
+.about-me__sub-container:nth-child(2) {
+  border-left: 1px solid var(--color-border);
+  padding-left: var(--space-6);
+}

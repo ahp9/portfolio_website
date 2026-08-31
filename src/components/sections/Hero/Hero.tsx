@@ -8,11 +8,13 @@ function Hero() {
     <section id="hero" className="hero">
         <div className="hero__content">
             <SectionHeading title="Ástríður Haraldsdóttir Passauer" subtitle="Reykjavík" size="lg" />
-            <h4 className="text__subtitle">Hugbúnaðarverkfræðingur</h4>
-            <p className="text__description">Ég hef klárað mína stúdenta gögnu og er nú að leitast eftir vinnu til að sýna mitt.
-                Ég klárað MSc í Human-Centered AI við DTU, með áherslu á Human-Computer Interaction.
-                Þar leitaðist eftir að auka þekkingu og skilning á notendaupplifun og jók mína getu í data visulaization og þróun hugbúnaðar.
-                Fyrir það kláraði ég BSc í Hugbúnaðarverkfræði við Háskóla Íslands, með áherslu á forritun og hugbúnaðarverkfræði.
+            <h4 className="text__subtitle">Software Engineer</h4>
+            <p className="text__description">I’m a software engineer with an MSc in Human-Centered AI from DTU, 
+                specializing in Human-Computer Interaction, and a BSc in Software Engineering from the University of Iceland.
+
+                I enjoy building software that not only works, but actually makes sense to the people using it, 
+                especially frontend and user-focused solutions. I’ve recently finished my studies and I’m excited 
+                to bring what I’ve learned into my next role.
             </p>
             <Button scrollTo="projects" variant="primary">
                 See my projects
