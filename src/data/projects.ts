@@ -21,6 +21,7 @@ export type Project = {
         caseStudy: string | null;
         github: string | null;
         demo: string | null;
+        pdf?: string | null;
     };
 
     image: string;
@@ -65,7 +66,7 @@ export const projects: Project[] = [
             demo: null,
         },
 
-        image: "public/master_thesis.png",
+        image: "/master_thesis.png",
         featured: true,
         grade: "12 / 12",
     },
@@ -146,7 +147,7 @@ export const projects: Project[] = [
             demo: null,
         },
 
-        image: "/images/projects/f1-prediction.png",
+        image: "/f1_league.png",
         featured: true,
     },
 
@@ -229,6 +230,7 @@ export const projects: Project[] = [
             github:
                 "https://github.com/ahp9/social_graphs_02805_project",
             demo: null,
+            pdf: "/Talking_Tactics_Report.pdf",
         },
 
         image: "/images/projects/talking-tactics.png",

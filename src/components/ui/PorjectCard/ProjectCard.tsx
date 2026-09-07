@@ -87,14 +87,39 @@ function ProjectCard({ project, expanded, onOpen, onClose, cardRef }: ProjectCar
                     }}
                   />
                 </div>
-                <p className="project-card__preview-caption">Live demo of the project</p>
+
+                <p className="project-card__preview-caption">
+                  Live demo of the project
+                </p>
+              </>
+            ) : project.links.pdf ? (
+              <>
+                <div className="project-card__preview-media project-card__preview-media--pdf">
+                  <iframe
+                    className="project-card__pdf"
+                    src={project.links.pdf}
+                    title={`${project.title} PDF`}
+                    loading="lazy"
+                  />
+                </div>
+
+                <p className="project-card__preview-caption">
+                  Project document — scroll to view
+                </p>
               </>
             ) : (
               <>
                 <div className="project-card__preview-media">
-                  <img className="project-card__image" src={project.image} alt="" />
+                  <img
+                    className="project-card__image"
+                    src={project.image}
+                    alt=""
+                  />
                 </div>
-                <p className="project-card__preview-caption">Static image of the project</p>
+
+                <p className="project-card__preview-caption">
+                  Static image of the project
+                </p>
               </>
             )}
           </div>
