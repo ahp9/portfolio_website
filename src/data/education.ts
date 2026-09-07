@@ -12,7 +12,7 @@ type EducationEntry = {
 
 export const education: EducationEntry[] = [
   {
-    degree: "MSc í Human-Centered Artificial Intelligence",
+    degree: "MSc in Human-Centered Artificial Intelligence",
     institution: "Danmarks Tekniske Universitet (DTU)",
     specialization: "Human-Computer Interaction",
     period: "2024 – 2026",
@@ -24,10 +24,10 @@ export const education: EducationEntry[] = [
       { text: "Python", color: "blue" },
     ],
     description:
-      "Áhersla á Human-Computer Interaction, þar sem ég jók þekkingu og skilning á notendaupplifun og efldi getu mína í data visualization og þróun hugbúnaðar.",
+      "I focussed on Human-Computer Interaction, where I gained knowledge and understanding of user experience and the ability to create data visualizations and develop software.",
   },
   {
-    degree: "BSc í Hugbúnaðarverkfræði",
+    degree: "BSc in Software Engineering",
     institution: "Háskóli Íslands",
     period: "2021 – 2024",
     tags: [
@@ -38,6 +38,6 @@ export const education: EducationEntry[] = [
       { text: "OOP", color: "blue" },
     ],
     description:
-      "Áhersla á forritun og hugbúnaðarverkfræði.",
+      "I focused on software engineering through practical projects involving full-stack development, with an emphasis on front-end development, user interfaces, and object-oriented programming.",
   },
 ];
