@@ -12,8 +12,9 @@ function Hero() {
             <p className="text__description">I’m a software engineer with an MSc in Human-Centered AI from DTU, 
                 specializing in Human-Computer Interaction, and a BSc in Software Engineering from the University of Iceland.
 
-                I enjoy building software that not only works, but actually makes sense to the people using it, 
-                especially frontend and user-focused solutions. I’ve recently finished my studies and I’m excited 
+                I enjoy building software that not only technically works, but also makes sense to the people using it, 
+                especially frontend and user-focused solutions.
+                I’ve recently finished my studies and I’m excited 
                 to bring what I’ve learned into my next role.
             </p>
             <Button scrollTo="projects" variant="primary">
