@@ -34,7 +34,7 @@ export const projects: Project[] = [
         id: "master-thesis",
         number: "01",
         status: "Finished",
-        period: "2025 — 2026",
+        period: "2026",
 
         title: "Scaffolding Learning with an AI Tutor",
 
