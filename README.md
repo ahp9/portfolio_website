@@ -16,11 +16,12 @@ This portfolio is under active development. Some sections, links, project pages,
  
 ## Features
  
-- Responsive, single-page portfolio layout
+- Responsive, single-page portfolio layout with a fixed header for in-page navigation
+- Hero section with a short introduction and a button that scrolls to the projects
 - About section with a categorized skills overview
-- Education history
-- Project cards with descriptions, roles, technologies, and external links
-- In-page navigation between portfolio sections
+- Education history with tags for each degree
+- Project cards that expand on click to show the problem, solution, hard part, role, and grade. An expanded card previews the live demo in an iframe, the project PDF, or a static image, in that order of preference. Sibling cards animate to their new positions when a card opens or closes.
+- Work history as an accordion list. Clicking a tag filters the list to jobs with that tag, and hovering a tag previews the filter.
 - Reusable UI components and shared design tokens
  
 ## Getting started
@@ -63,14 +64,14 @@ Vite will print the local development URL in the terminal. The page automaticall
 
 ```text
 .
-├── public/                  # Static assets served without processing
+├── public/                  # Static assets served as-is (images, PDFs, favicon)
 ├── src/
 │   ├── assets/              # Assets imported by application code
 │   ├── components/
 │   │   ├── layout/          # Shared page layout components
 │   │   ├── sections/        # Main portfolio sections
 │   │   └── ui/              # Reusable interface components
-│   ├── data/                # Portfolio content and navigation data
+│   ├── data/                # Content for education, projects, jobs, skills, and navigation
 │   ├── styles/              # Global styles and design tokens
 │   ├── App.tsx              # Top-level application composition
 │   └── main.tsx             # React application entry point
@@ -78,17 +79,22 @@ Vite will print the local development URL in the terminal. The page automaticall
 ├── eslint.config.js         # ESLint configuration
 ├── tsconfig*.json           # TypeScript configuration
 └── vite.config.ts           # Vite configuration
- ```
+```
  
 ## Updating portfolio content
 
 Most repeatable content is kept separate from the presentation components:
 
 - Edit `src/data/education.ts` to update education entries.
-- Edit `src/data/projects.ts` to add or modify projects.
+- Edit `src/data/projects.ts` to add or modify projects. A project with a `demo` link shows that site in the expanded card. Without one, a `pdf` link is shown, and otherwise `image`. The `grade` field is optional.
+- Edit `src/data/jobs.ts` to add or modify work entries. Set `takeaway` to `null` to leave it out.
 - Edit `src/data/skills.ts` to update skill categories and items.
 - Edit `src/data/navigation.ts` to change the header navigation.
 - Update section copy in the corresponding directory under `src/components/sections/`.
+
+Tags take a `color` value that maps to a class in `src/components/ui/Tag/Tag.css`. The available colors are `purple`, `blue`, `pink`, `orange`, `green`, `coral`, and `teal`.
+
+Page sections render in the order set in `src/App.tsx`: Hero, About, Education, Projects, and Work. A new section also needs an entry in `src/data/navigation.ts` with an `href` that matches the section's `id`.
 
 Static files that need a stable public URL belong in `public/`. Files that should be imported and processed as part of the application bundle belong in `src/assets/`.
 
@@ -98,7 +104,7 @@ Create a deployable build with:
  
 ```bash
 npm run build
- ```
+```
 
 The generated `dist/` directory can be deployed to any static hosting provider. Before deploying, verify the build locally:
 
